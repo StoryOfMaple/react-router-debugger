@@ -95,32 +95,4 @@ const NavLink = forwardRef(
   }
 );
 
-if (false) {
-  NavLink.displayName = "NavLink";
-
-  const ariaCurrentType = PropTypes.oneOf([
-    "page",
-    "step",
-    "location",
-    "date",
-    "time",
-    "true",
-    "false"
-  ]);
-
-  NavLink.propTypes = {
-    ...Link.propTypes,
-    "aria-current": ariaCurrentType,
-    activeClassName: PropTypes.string,
-    activeStyle: PropTypes.object,
-    className: PropTypes.string,
-    exact: PropTypes.bool,
-    isActive: PropTypes.func,
-    location: PropTypes.object,
-    sensitive: PropTypes.bool,
-    strict: PropTypes.bool,
-    style: PropTypes.object
-  };
-}
-
 export default NavLink;

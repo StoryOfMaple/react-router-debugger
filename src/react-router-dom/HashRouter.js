@@ -15,21 +15,4 @@ class HashRouter extends React.Component {
   }
 }
 
-if (false) {
-  HashRouter.propTypes = {
-    basename: PropTypes.string,
-    children: PropTypes.node,
-    getUserConfirmation: PropTypes.func,
-    hashType: PropTypes.oneOf(["hashbang", "noslash", "slash"])
-  };
-
-  HashRouter.prototype.componentDidMount = function() {
-    warning(
-      !this.props.history,
-      "<HashRouter> ignores the history prop. To use a custom history, " +
-        "use `import { Router }` instead of `import { HashRouter as Router }`."
-    );
-  };
-}
-
 export default HashRouter;

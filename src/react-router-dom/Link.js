@@ -64,9 +64,6 @@ const LinkAnchor = forwardRef(
   }
 );
 
-if (false) {
-  LinkAnchor.displayName = "LinkAnchor";
-}
 
 /**
  * The public API for rendering a history-aware <a>.
@@ -119,28 +116,5 @@ const Link = forwardRef(
     );
   }
 );
-
-if (false) {
-  const toType = PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.object,
-    PropTypes.func
-  ]);
-  const refType = PropTypes.oneOfType([
-    PropTypes.string,
-    PropTypes.func,
-    PropTypes.shape({ current: PropTypes.any })
-  ]);
-
-  Link.displayName = "Link";
-
-  Link.propTypes = {
-    innerRef: refType,
-    onClick: PropTypes.func,
-    replace: PropTypes.bool,
-    target: PropTypes.string,
-    to: toType.isRequired
-  };
-}
 
 export default Link;

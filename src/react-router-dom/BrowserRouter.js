@@ -13,7 +13,6 @@ class BrowserRouter extends React.Component {
   history = createHistory(this.props);
 
   render() {
-    debugger
     return <Router history={this.history} children={this.props.children} />;
   }
 }
