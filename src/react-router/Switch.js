@@ -45,7 +45,7 @@ class Switch extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   Switch.propTypes = {
     children: PropTypes.node,
     location: PropTypes.object

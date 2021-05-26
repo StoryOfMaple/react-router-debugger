@@ -15,7 +15,7 @@ class BrowserRouter extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   BrowserRouter.propTypes = {
     basename: PropTypes.string,
     children: PropTypes.node,

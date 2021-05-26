@@ -56,7 +56,7 @@ class Route extends React.Component {
               {props.match
                 ? children
                   ? typeof children === "function"
-                    ? __DEV__
+                    ? false
                       ? evalChildrenDev(children, props, this.props.path)
                       : children(props)
                     : children
@@ -66,7 +66,7 @@ class Route extends React.Component {
                   ? render(props)
                   : null
                 : typeof children === "function"
-                ? __DEV__
+                ? false
                   ? evalChildrenDev(children, props, this.props.path)
                   : children(props)
                 : null}
@@ -78,7 +78,7 @@ class Route extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   Route.propTypes = {
     children: PropTypes.oneOfType([PropTypes.func, PropTypes.node]),
     component: (props, propName) => {

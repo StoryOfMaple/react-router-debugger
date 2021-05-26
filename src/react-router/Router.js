@@ -74,7 +74,7 @@ class Router extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   Router.propTypes = {
     children: PropTypes.node,
     history: PropTypes.object.isRequired,

@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line
 import PropTypes from "prop-types";
 import { createLocation, locationsAreEqual } from "history";
 import invariant from "tiny-invariant";
@@ -24,9 +25,9 @@ function Redirect({ computedMatch, to, push = false }) {
             ? typeof to === "string"
               ? generatePath(to, computedMatch.params)
               : {
-                  ...to,
-                  pathname: generatePath(to.pathname, computedMatch.params)
-                }
+                ...to,
+                pathname: generatePath(to.pathname, computedMatch.params)
+              }
             : to
         );
 
@@ -61,12 +62,6 @@ function Redirect({ computedMatch, to, push = false }) {
   );
 }
 
-if (__DEV__) {
-  Redirect.propTypes = {
-    push: PropTypes.bool,
-    from: PropTypes.string,
-    to: PropTypes.oneOfType([PropTypes.string, PropTypes.object]).isRequired
-  };
-}
+
 
 export default Redirect;

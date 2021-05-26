@@ -15,7 +15,7 @@ class HashRouter extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   HashRouter.propTypes = {
     basename: PropTypes.string,
     children: PropTypes.node,

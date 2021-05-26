@@ -1,4 +1,5 @@
 import React from "react";
+// eslint-disable-next-line
 import PropTypes from "prop-types";
 import invariant from "tiny-invariant";
 
@@ -40,13 +41,6 @@ function Prompt({ message, when = true }) {
   );
 }
 
-if (__DEV__) {
-  const messageType = PropTypes.oneOfType([PropTypes.func, PropTypes.string]);
 
-  Prompt.propTypes = {
-    when: PropTypes.bool,
-    message: messageType.isRequired
-  };
-}
 
 export default Prompt;

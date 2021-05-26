@@ -64,7 +64,7 @@ const LinkAnchor = forwardRef(
   }
 );
 
-if (__DEV__) {
+if (false) {
   LinkAnchor.displayName = "LinkAnchor";
 }
 
@@ -120,7 +120,7 @@ const Link = forwardRef(
   }
 );
 
-if (__DEV__) {
+if (false) {
   const toType = PropTypes.oneOfType([
     PropTypes.string,
     PropTypes.object,

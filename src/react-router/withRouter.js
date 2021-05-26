@@ -35,7 +35,7 @@ function withRouter(Component) {
   C.displayName = displayName;
   C.WrappedComponent = Component;
 
-  if (__DEV__) {
+  if (false) {
     C.propTypes = {
       wrappedComponentRef: PropTypes.oneOfType([
         PropTypes.string,

@@ -83,7 +83,7 @@ class StaticRouter extends React.Component {
   }
 }
 
-if (__DEV__) {
+if (false) {
   StaticRouter.propTypes = {
     basename: PropTypes.string,
     context: PropTypes.object,

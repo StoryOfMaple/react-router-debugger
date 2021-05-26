@@ -95,7 +95,7 @@ const NavLink = forwardRef(
   }
 );
 
-if (__DEV__) {
+if (false) {
   NavLink.displayName = "NavLink";
 
   const ariaCurrentType = PropTypes.oneOf([
