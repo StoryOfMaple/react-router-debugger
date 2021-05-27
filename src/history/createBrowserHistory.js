@@ -59,11 +59,11 @@ function createBrowserHistory(props = {}) {
     warning(
       !basename || hasBasename(path, basename),
       'You are attempting to use a basename on a page whose URL path does not begin ' +
-        'with the basename. Expected path "' +
-        path +
-        '" to begin with "' +
-        basename +
-        '".'
+      'with the basename. Expected path "' +
+      path +
+      '" to begin with "' +
+      basename +
+      '".'
     );
 
     if (basename) path = stripBasename(path, basename);
@@ -159,7 +159,7 @@ function createBrowserHistory(props = {}) {
         state !== undefined
       ),
       'You should avoid providing a 2nd state argument to push when the 1st ' +
-        'argument is a location-like object that already has state; it is ignored'
+      'argument is a location-like object that already has state; it is ignored'
     );
 
     const action = 'PUSH';
@@ -209,7 +209,7 @@ function createBrowserHistory(props = {}) {
         state !== undefined
       ),
       'You should avoid providing a 2nd state argument to replace when the 1st ' +
-        'argument is a location-like object that already has state; it is ignored'
+      'argument is a location-like object that already has state; it is ignored'
     );
 
     const action = 'REPLACE';

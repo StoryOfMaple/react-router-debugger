@@ -35,16 +35,6 @@ function withRouter(Component) {
   C.displayName = displayName;
   C.WrappedComponent = Component;
 
-  if (false) {
-    C.propTypes = {
-      wrappedComponentRef: PropTypes.oneOfType([
-        PropTypes.string,
-        PropTypes.func,
-        PropTypes.object
-      ])
-    };
-  }
-
   return hoistStatics(C, Component);
 }
 

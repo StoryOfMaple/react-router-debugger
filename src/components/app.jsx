@@ -30,10 +30,15 @@ export default function App() {
         {/* A <Switch> looks through its children <Route>s and
             renders the first one that matches the current URL. */}
         {/* <Switch> */}
-          <Route path="/about">
-            <About />
-          </Route>
-          {/* <Route path="/users">
+        <Route path="/about">
+          {
+            (props) => {
+              console.log(props)
+              return <About />
+            }
+          }
+        </Route>
+        {/* <Route path="/users">
             <Users />
           </Route>
           <Route path="/">

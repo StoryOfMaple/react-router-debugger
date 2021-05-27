@@ -12,6 +12,10 @@ import warning from "tiny-warning";
 class BrowserRouter extends React.Component {
   history = createHistory(this.props);
 
+  componentDidMount() {
+    window.routerHistory = this.history;
+  }
+
   render() {
     return <Router history={this.history} children={this.props.children} />;
   }
