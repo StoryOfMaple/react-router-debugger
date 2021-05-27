@@ -74,19 +74,4 @@ class Router extends React.Component {
   }
 }
 
-if (false) {
-  Router.propTypes = {
-    children: PropTypes.node,
-    history: PropTypes.object.isRequired,
-    staticContext: PropTypes.object
-  };
-
-  Router.prototype.componentDidUpdate = function(prevProps) {
-    warning(
-      prevProps.history === this.props.history,
-      "You cannot change <Router history>"
-    );
-  };
-}
-
 export default Router;
